@@ -1,0 +1,17 @@
+package com.luv2code.springdemo.mvc;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class HelloWorldController {
+	
+	//Need controller method to show initial HTML form 
+	@REquestMapping("/")
+	public String showForm ()
+	{
+		retun null ;
+	}
+	
+	//Need controller method to process form
+
+}

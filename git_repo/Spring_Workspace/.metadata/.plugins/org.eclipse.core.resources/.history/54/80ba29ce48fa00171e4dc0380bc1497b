@@ -1,0 +1,23 @@
+package com.annotations.java;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class BeanScopeApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//load config file
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+		// get bean from spring container
+		TennisCoach coach = context.getBean("tennisCoach",TennisCoach.class);
+		
+		
+		
+		//call methods
+		System.out.println(coac);
+		//cloase context
+	}
+
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+	
+    <!-- Define your beans here -->
+    <bean id="address" class="com.practice.java.Address">
+    <property name="home_num" value="14516"/>
+    <property name="city" value="Bellevue"/>
+    <property name="state" value="Washington"/>
+    <property name="pincode" value="98007"/>
+    </bean>
+    
+    <bean id="emp" class="com.practice.java.Employee" autowire="byType"> 
+    <property name="id" value="1"/>
+    <property name="name" value="Apoorva"/>
+    <property name="age" value="27"/>
+    <property name="email">
+    <list>
+    <value>apoomjoshi@gmail.com</value>
+    <value>apoorva.kulkarni@yahoo.co.in</value>
+    </list>
+    </property>
+    </bean>
+   
+	
+	
+</beans>
+
+
+
+
+

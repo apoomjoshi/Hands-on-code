@@ -1,0 +1,13 @@
+<!DOCTYPE type html>
+<html>
+
+<body>
+Helloworld of Spring
+<br><br>
+
+Student Name : ${param.studentName }
+
+Message : ${message}
+
+</body>
+</html>
